@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Packable Travel Shoes</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <h1>Packable Travel Shoes</h1>
+    <nav class="nav-bar">
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <div class="nav-dropdown">
+        <span>Categories</span>
+        <div class="dropdown-content">
+          <a href="#">Travel</a>
+          <a href="#">Casual</a>
+          <a href="#">Formal</a>
+          <a href="#">Sale</a>
+        </div>
+      </div>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>Find Your Perfect Travel Companion</h2>
+    <p>Lightweight, durable, and packable shoes for every journey.</p>
+    <button id="hero-btn">Shop Now</button>
+  </section>
+  <section class="filters">
+    <select id="category-filter">
+      <option value="all">All</option>
+      <option value="travel">Travel</option>
+      <option value="casual">Casual</option>
+      <option value="formal">Formal</option>
+    </select>
+    <button id="apply-filters">Apply Filters</button>
+  </section>
+  <section class="container" id="product-grid">
+    <div class="product-card" data-category="travel">
+        <div class="product-image">
+          <img src="https://www.lamourdespieds.com/assets/images/WebImages/production/ldp/large/ZAINA-LEPLT-PRI.jpg" alt="Product 1">
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Zaina </h3>
+          <p class="product-price">$333.80</p>
+          <a href="#" class="product-link">View Details</a>
+        </div>
+      </div>
+      <div class="product-card" data-category="casual">
+        <div class="product-image">
+          <img src="https://www.lamourdespieds.com/assets/images/WebImages/production/ldp/large/YOLAND-SUDTA-SDR.jpg" alt="Product 2">
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">YOLANDI</h3>
+          <p class="product-price">$110.15</p>
+          <a href="#" class="product-link">View Details</a>
+        </div>
+      </div>
+      <div class="product-card" data-category="travel">
+          <div class="product-image">
+            <img src="https://www.lamourdespieds.com/assets/images/WebImages/production/ldp/large/CARLOW-SUCOF-SDR.jpg" alt="Product 3">
+          </div>
+          <div class="product-details">
+            <h3 class="product-name">CARLOW</h3>
+            <p class="product-price">$219.34</p>
+            <a href="#" class="product-link">View Details</a>
+          </div>
+        </div>
+        <div class="product-card" data-category="travel">
+          <div class="product-image">
+            <img src="https://www.lamourdespieds.com/assets/images/WebImages/production/ldp/large/BELEN-FABLK-SDR.jpg" alt="Product 4">
+          </div>
+          <div class="product-details">
+            <h3 class="product-name">BELEN</h3>
+            <p class="product-price">$140.09</p>
+            <a href="#" class="product-link">View Details</a>
+          </div>
+        </div>
+      <div class="product-card" data-category="travel">
+        <div class="product-image">
+          <img src="https://www.lamourdespieds.com/assets/images/WebImages/production/ldp/large/KARSHA-LEWHG-SDR.jpg" alt="Product 5">
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Comfy Loafers</h3>
+          <p class="product-price">2120.20</p>
+          <a href="#" class="product-link">View Details</a>
+        </div>
+      </div>
+      <div class="product-card" data-category="travel">
+        <div class="product-image">
+          <img src="https://www.lamourdespieds.com/assets/images/WebImages/production/ldp/large/BARUNA-SUGOB-SDR.jpg" alt="Product 6">
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Comfy Loafers</h3>
+          <p class="product-price">$190.03</p>
+          <a href="#" class="product-link">View Details</a>
+        </div>
+      </div>
+      <div class="product-card" data-category="travel">
+        <div class="product-image">
+          <img src="https://www.lamourdespieds.com/assets/images/WebImages/production/ldp/large/KARSHA-LELIO-SDR.jpg" alt="Product 7">
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Comfy Loafers</h3>
+          <p class="product-price">$180.24</p>
+          <a href="#" class="product-link">View Details</a>
+        </div>
+      </div>
+      <div class="product-card" data-category="travel">
+        <div class="product-image">
+          <img src="https://www.lamourdespieds.com/assets/images/WebImages/production/ldp/large/TIFFAN-MNPLA-SDR.jpg" alt="Product 8">
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Comfy Loafers</h3>
+          <p class="product-price">$120.02</p>
+          <a href="#" class="product-link">View Details</a>
+        </div>
+      </div>
+      <div class="product-card" data-category="travel">
+        <div class="product-image">
+          <img src="https://www.lamourdespieds.com/assets/images/WebImages/production/ldp/large/KANAV-SUTPE-SDR.jpg" alt="Product 9">
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Comfy Loafers</h3>
+          <p class="product-price">$199.09</p>
+          <a href="#" class="product-link">View Details</a>
+        </div>
+      </div>
+      <div class="product-card" data-category="casual">
+        <div class="product-image">
+          <img src="https://www.lamourdespieds.com/assets/images/WebImages/production/ldp/large/AMADOU-KSBLK-SDR.jpg" alt="Product 10">
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Packable Sneakers</h3>
+          <p class="product-price">$110.60</p>
+          <a href="#" class="product-link">View Details</a>
+        </div>
+      </div>
+      <div class="product-card" data-category="travel">
+          <div class="product-image">
+            <img src="https://www.lamourdespieds.com/assets/images/WebImages/production/ldp/large/BAYLA-SUTPE-PRI.jpg" alt="Product 11">
+          </div>
+          <div class="product-details">
+            <h3 class="product-name">Comfy Loafers</h3>
+            <p class="product-price">$180.55</p>
+            <a href="#" class="product-link">View Details</a>
+          </div>
+        </div>
+        <div class="product-card" data-category="travel">
+          <div class="product-image">
+            <img src="https://www.lamourdespieds.com/assets/images/WebImages/production/ldp/large/KANAV-SUBPY-SDR.jpg" alt="Product 12">
+          </div>
+          <div class="product-details">
+            <h3 class="product-name">Comfy Loafers</h3>
+            <p class="product-price">$140.37</p>
+            <a href="#" class="product-link">View Details</a>
+          </div>
+        </div>
+ 
+  </section>
+  <footer class="footer">
+    <p>&copy; 2024 Travel Shoes Co. All Rights Reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+
+  <script>
+    document.getElementById("hero-btn").addEventListener("click", function () {
+      alert("Shop Now clicked!");
+    });
+    document.getElementById("apply-filters").addEventListener("click", function () {
+      const category = document.getElementById("category-filter").value;
+      const products = document.querySelectorAll(".product-card");
+
+      products.forEach(product => {
+        if (category === "all" || product.dataset.category === category) {
+          product.style.display = "block";
+        } else {
+          product.style.display = "none";
+        }
+      });
+    });
+  </script>
+</body>
+</html>

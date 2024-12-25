@@ -1,0 +1,249 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+    .header {
+      background-color: #333;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header h1 {
+      font-size: 1.8rem;
+    }
+    .nav-bar {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .nav-bar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    .nav-bar a:hover {
+      color: #0073e6;
+    }
+    .nav-dropdown {
+      position: relative;
+      cursor: pointer;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 35px;
+      left: 0;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      overflow: hidden;
+      z-index: 1;
+    }
+    .dropdown-content a {
+      display: block;
+      padding: 10px 15px;
+      color: #333;
+      text-decoration: none;
+    }
+    .dropdown-content a:hover {
+      background-color: #0073e6;
+      color: white;
+    }
+    .nav-dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .hero {
+      background: url(https://www.lamourdespieds.com/assets/images/WebImages/production/landing/ldp/COMFORT%20BANNER%20LDP_TECH.jpg) no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .hero button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      background-color: #0073e6;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .hero button:hover {
+      background-color: #005bb5;
+    }
+    .filters {
+      background-color: #fff;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+    .filters select {
+      padding: 5px 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .filters button {
+      padding: 5px 15px;
+      border: none;
+      background-color: #0073e6;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .filters button:hover {
+      background-color: #005bb5;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin: 15px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: #fff;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+    .product-image img {
+      width: 100%;
+      border-bottom: 1px solid #ddd;
+    }
+    .product-details {
+      padding: 15px;
+    }
+    .product-name {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .product-price {
+      color: #b12704;
+      font-size: 1.4em;
+      margin: 10px 0;
+    }
+    .product-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #0073e6;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .product-link:hover {
+      background-color: #005bb5;
+    }
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .footer a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    /* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    body {
+      font-size: 14px;
+    }
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .nav-bar {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .nav-dropdown .dropdown-content {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .hero {
+      padding: 50px 20px;
+    }
+    .hero h2 {
+      font-size: 1.8rem;
+    }
+    .hero p {
+      font-size: 1rem;
+    }
+    .hero button {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+    .filters {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+    }
+    .filters select,
+    .filters button {
+      width: 100%;
+    }
+    .container {
+      flex-direction: column;
+      padding: 10px;
+    }
+    .product-card {
+      width: 100%;
+      margin: 10px 0;
+    }
+    .product-details {
+      padding: 10px;
+    }
+    .product-name {
+      font-size: 1em;
+    }
+    .product-price {
+      font-size: 1.2em;
+    }
+    .product-link {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+    .footer {
+      font-size: 0.9rem;
+      padding: 15px;
+    }
+  }
